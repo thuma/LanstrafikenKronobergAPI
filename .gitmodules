@@ -1,0 +1,6 @@
+[submodule "CoordinateTransformationLibrary"]
+	path = CoordinateTransformationLibrary
+	url = git@github.com:thuma/CoordinateTransformationLibrary.git
+[submodule "gtfs-stop-reader"]
+	path = gtfs-stop-reader
+	url = git@github.com:thuma/gtfs-stop-reader.git
