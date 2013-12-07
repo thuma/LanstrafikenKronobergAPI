@@ -69,7 +69,7 @@ foreach($all as $key => $station)
 	if(isset($station->position)==FALSE)
 		{
 		//open connection
-		$ch = curl_init('http://www.reseplaneraren.blekingetrafiken.se/v2/querypage_adv.aspx');
+		$ch = curl_init('http://www.ltk.fskab.se/querypage_adv.aspx');
 			
 		$fields_string = 'inpPointFr_ajax=&inpPointTo_ajax=&inpPointInterm_ajax=&selRegionFr=741'.
 		'&selPointFr='.rawurlencode(utf8_decode($station->cleanname)).'%7C'.$station->id.'%7C0'.
