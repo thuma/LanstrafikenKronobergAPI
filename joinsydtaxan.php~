@@ -1,0 +1,24 @@
+<?php
+header('Content-type: application/json; charset=utf-8');
+
+$local = json_decode(file_get_contents('coord-gtfs.json'));
+$sydlist = json_decode(file_get_contents('nameidsyd.json'));
+
+$mapp = array();
+
+print_r($sydlist);
+/*
+foreach($sydlist as $idnamn){
+$mapp[$idnamn->cleanname]=$idnamn->id;
+}
+
+
+foreach($local as $key => $stop){
+if(isset($mapp[$stop->cleanname]))
+	{
+	$local[$key]->sydtaxid = $mapp[$stop->cleanname];
+	}
+}
+
+file_put_contents('coord-gtfs-sydid.json',json_encode($local));
+*/
